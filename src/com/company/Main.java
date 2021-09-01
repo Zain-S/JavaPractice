@@ -1,13 +1,17 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
         Operators operators = new Operators();
 //        operators.divisionPractice();
 //        operators.incrementDecrement();
-
+//        operators.ternaryOperator();
+//        operators.nestedTernaryOperator();
+        Examples examples = new Examples();
+        examples.printInteger();
     }
 
 
