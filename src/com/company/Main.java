@@ -13,7 +13,9 @@ public class Main {
         Examples examples = new Examples();
 //        examples.printInteger();
 //        examples.addition();
-        examples.multiplicationFloat();
+//        examples.multiplicationFloat();
+//        examples.ascii();
+        examples.calculatorv1();
     }
 
 
@@ -42,10 +44,6 @@ public class Main {
         System.out.println("Comparing 1st and 2nd: " + first.equals(second));
         System.out.println("Comparing 2nd and 3rd: " + second.equals(third));
     }
-
-
-
-
 
     //Java Program to Print an Integer (Entered by the User)
 //    public void printInteger(){

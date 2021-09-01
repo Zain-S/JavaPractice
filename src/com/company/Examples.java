@@ -25,6 +25,7 @@ public class Examples {
         int result = num1+num2;
         System.out.println("Addition is: " + result);
     }
+
     //example 3
     //Java Program to Multiply two Floating Point Numbers
     public void multiplicationFloat(){
@@ -34,7 +35,55 @@ public class Examples {
         System.out.print("Enter 2ndt floating number: ");
         float num2 = input.nextFloat();
         input.close();
-        float result = num1 + num2;
+        float result = num1 * num2;
         System.out.println("Addition is: " + result);
     }
+
+    //example 4
+    //Find ASCII value of a character
+    public void ascii()
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a character: ");
+        char ch = scanner.next().charAt(0);
+        scanner.close();
+        int ascii = ch;
+        System.out.println("Ascii Value of " + ch + " is: " + ascii);
+    }
+
+    //example
+    //simple calculator using switch
+    public void calculatorv1()
+    {
+        float result;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number 1: ");
+        float num1 = scanner.nextFloat();
+        System.out.print("Enter number 2: ");
+        float num2 = scanner.nextFloat();
+        System.out.print("Enter an operator: ");
+        char operator = scanner.next().charAt(0);
+        scanner.close();
+        switch (operator){
+            case '/':
+                result = num1 / num2;
+                System.out.println("Division is: " + result);
+                break;
+            case  '*':
+                result = num1 * num2;
+                System.out.println("Multiplication is: " + result);
+                break;
+            case '+':
+                result = num1 + num2;
+                System.out.println("Addition is: " + result);
+                break;
+            case '-':
+                result = num1 = num2;
+                System.out.println("Subtraction is: " + result);
+                break;
+            default:
+                System.out.println("You entered wrong operator.");
+        }
+    }
+
 }
