@@ -8,6 +8,7 @@ public class Examples {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter an integer: ");
         int num = input.nextInt();
+        input.close();
         System.out.println("Number is: " + num);
     }
 }
