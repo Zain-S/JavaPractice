@@ -15,7 +15,8 @@ public class Main {
 //        examples.addition();
 //        examples.multiplicationFloat();
 //        examples.ascii();
-        examples.calculatorv1();
+//        examples.calculatorv1();
+        examples.sumOfNNumbers();
     }
 
 

@@ -86,4 +86,16 @@ public class Examples {
         }
     }
 
+    //example
+    //Display Sum of n Natural Numbers
+    public void sumOfNNumbers(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        int sum = 0;
+        scanner.close();
+        for (int i = 1; i <= num; i++) sum += i;
+        System.out.println("Sum of " + num + " numbers is: " + sum);
+    }
+
 }
