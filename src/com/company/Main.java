@@ -11,7 +11,9 @@ public class Main {
 //        operators.ternaryOperator();
 //        operators.nestedTernaryOperator();
         Examples examples = new Examples();
-        examples.printInteger();
+//        examples.printInteger();
+//        examples.addition();
+        examples.multiplicationFloat();
     }
 
 

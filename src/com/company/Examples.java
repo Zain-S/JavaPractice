@@ -3,6 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class Examples {
+    //example 1
     //Java Program to Print an Integer (Entered by the User)
     public void printInteger(){
         Scanner input = new Scanner(System.in);
@@ -10,5 +11,30 @@ public class Examples {
         int num = input.nextInt();
         input.close();
         System.out.println("Number is: " + num);
+    }
+
+    //example 2
+    //Java Program to Add Two Integers
+    public void addition(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter 1st integer: ");
+        int num1 = input.nextInt();
+        System.out.print("Enter 2ndt integer: ");
+        int num2 = input.nextInt();
+        input.close();
+        int result = num1+num2;
+        System.out.println("Addition is: " + result);
+    }
+    //example 3
+    //Java Program to Multiply two Floating Point Numbers
+    public void multiplicationFloat(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter 1st floating number: ");
+        float num1 = input.nextFloat();
+        System.out.print("Enter 2ndt floating number: ");
+        float num2 = input.nextFloat();
+        input.close();
+        float result = num1 + num2;
+        System.out.println("Addition is: " + result);
     }
 }
