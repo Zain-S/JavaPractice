@@ -98,4 +98,20 @@ public class Examples {
         System.out.println("Sum of " + num + " numbers is: " + sum);
     }
 
+    //example
+    //Display Sum of n Natural Numbers using for each loop
+    public void sumOfNNumbersUsingForEach(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter size of string: ");
+        int size;
+        size = scanner.nextInt();
+        int[] number = new int[size];
+        int sum = 0;
+        for (int num: number) {
+            System.out.print("Enter a number: ");
+            number[num] = scanner.nextInt();
+            sum+=number[num];
+        }
+        System.out.println("Sum of " + number.length + " numbers is: " + sum);
+    }
 }

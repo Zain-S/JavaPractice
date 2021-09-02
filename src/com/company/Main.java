@@ -10,13 +10,18 @@ public class Main {
 //        operators.incrementDecrement();
 //        operators.ternaryOperator();
 //        operators.nestedTernaryOperator();
+
+        FlowControl flowControl = new FlowControl();
+//        flowControl.forEach();
+
         Examples examples = new Examples();
 //        examples.printInteger();
 //        examples.addition();
 //        examples.multiplicationFloat();
 //        examples.ascii();
 //        examples.calculatorv1();
-        examples.sumOfNNumbers();
+//        examples.sumOfNNumbers();
+//        examples.sumOfNNumbersUsingForEach();
     }
 
 
