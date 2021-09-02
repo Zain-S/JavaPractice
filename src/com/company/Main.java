@@ -17,6 +17,7 @@ public class Main {
         Arrays arrays = new Arrays();
 //        arrays.twoDArray();
 //        arrays.print2DArray();
+        arrays.print2DArrayUsingForEach();
 
         Examples examples = new Examples();
 //        examples.printInteger();
