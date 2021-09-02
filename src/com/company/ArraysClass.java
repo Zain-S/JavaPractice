@@ -97,4 +97,27 @@ public class ArraysClass {
         System.arraycopy(n1, 2, n3, 1, 2);
         System.out.println("n3 = " + Arrays.toString(n3));
     }
+    public void copyArrayUsingCopyOfRange(){
+        int[] source = {2, 3, 12, 4, 12, -2};
+        int[] destination1 = Arrays.copyOfRange(source, 0, source.length);
+        System.out.println("destination1 = " + Arrays.toString(destination1));
+        int[] destination2 = Arrays.copyOfRange(source, 2, 5);
+        System.out.println("destination2 = " + Arrays.toString(destination2));
+    }
+    public void copying2dArraysUsingLoop(){
+        int[][] source = {
+                {1, 2, 3, 4},
+                {5, 6},
+                {0, 2, 42, -4, 5}
+        };
+        int[][] destination = new int[source.length][];
+        for (int i = 0; i < destination.length; i++) {
+            destination[i] = new int[source[i].length];
+            for (int j = 0; j < destination[i].length; j++) {
+                destination[i][j] = source[i][j];
+            }
+        }
+        System.out.println(Arrays.deepToString(destination));
+    }
+
 }

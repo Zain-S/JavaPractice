@@ -20,6 +20,8 @@ public class Main {
 //        arrays.threeDArray();
 //        arrays.threeDArrayUsingForEach();
 //        arrays.copyArrayUsingArrayCopy();
+//        arrays.copyArrayUsingCopyOfRange();
+//        arrays.copying2dArraysUsingLoop();
 
         Examples examples = new Examples();
 //        examples.printInteger();
