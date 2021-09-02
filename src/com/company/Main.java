@@ -13,12 +13,13 @@ public class Main {
 //        flowControl.forEach();
 
         ArraysClass arrays = new ArraysClass();
-        arrays.simpleArray();
+//        arrays.simpleArray();
 //        arrays.twoDArray();
 //        arrays.print2DArray();
 //        arrays.print2DArrayUsingForEach();
 //        arrays.threeDArray();
 //        arrays.threeDArrayUsingForEach();
+//        arrays.copyArrayUsingArrayCopy();
 
         Examples examples = new Examples();
 //        examples.printInteger();
