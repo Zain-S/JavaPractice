@@ -18,7 +18,8 @@ public class Main {
 //        arrays.twoDArray();
 //        arrays.print2DArray();
 //        arrays.print2DArrayUsingForEach();
-        arrays.threeDArray();
+//        arrays.threeDArray();
+        arrays.threeDArrayUsingForEach();
 
         Examples examples = new Examples();
 //        examples.printInteger();

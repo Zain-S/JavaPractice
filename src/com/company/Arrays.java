@@ -61,4 +61,26 @@ public class Arrays {
             }
         }
     }
+    public void threeDArrayUsingForEach(){
+        int num[][][] = {
+                {
+                        {1, 2, 3, 9},
+                        {4, 5, 6}
+                },
+                {
+                        {7, 8, 9},
+                        {10, 11, 12}
+                }
+        };
+        for (int[][] i: num) {
+            for(int[] j: i)
+            {
+                for (int k: j) {
+                    System.out.print(k + "\t");
+                }
+                System.out.println();
+            }
+        }
+    }
+
 }
