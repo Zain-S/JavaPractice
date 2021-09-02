@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -14,12 +12,13 @@ public class Main {
         FlowControl flowControl = new FlowControl();
 //        flowControl.forEach();
 
-        Arrays arrays = new Arrays();
+        ArraysClass arrays = new ArraysClass();
+        arrays.simpleArray();
 //        arrays.twoDArray();
 //        arrays.print2DArray();
 //        arrays.print2DArrayUsingForEach();
 //        arrays.threeDArray();
-        arrays.threeDArrayUsingForEach();
+//        arrays.threeDArrayUsingForEach();
 
         Examples examples = new Examples();
 //        examples.printInteger();

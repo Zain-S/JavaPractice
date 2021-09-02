@@ -1,6 +1,8 @@
 package com.company;
 
-public class Arrays {
+import java.util.Arrays;
+
+public class ArraysClass {
     public void twoDArray(){
         int[][] a = {
                 {1, 2, 3},
@@ -82,5 +84,8 @@ public class Arrays {
             }
         }
     }
-
+    public void simpleArray(){
+        int[] num = {1,2,3,4,5,6};
+        System.out.println(Arrays.toString(num));
+    }
 }
