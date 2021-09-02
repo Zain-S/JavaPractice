@@ -14,6 +14,9 @@ public class Main {
         FlowControl flowControl = new FlowControl();
 //        flowControl.forEach();
 
+        Arrays arrays = new Arrays();
+        arrays.twoDArray();
+
         Examples examples = new Examples();
 //        examples.printInteger();
 //        examples.addition();
