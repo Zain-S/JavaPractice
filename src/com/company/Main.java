@@ -48,6 +48,8 @@ public class Main {
 //        examples.sumOfNNumbers();
 //        examples.sumOfNNumbersUsingForEach();
 //        examples.vowelOrConstant();
+//        examples.rootsOfQuadraticEq(2.3,4, 5.6 );
+
     }
 
     //instance of practice

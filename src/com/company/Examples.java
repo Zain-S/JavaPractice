@@ -128,5 +128,29 @@ public class Examples {
         scanner.close();
     }
 
+    //Find all Roots of a Quadratic Equation
+    public void rootsOfQuadraticEq(double a,double b,double c){
+        double determinant = b * b - 4 * a * c;
+        double real = 0, imaginary = 0;
+        String root1, root2;
+        if(determinant > 0)
+        {
+            root1 = String.valueOf((-b + Math.sqrt(determinant)) / (2 * a));
+            root2 = String.valueOf((-b - Math.sqrt(determinant)) / (2 * a));
+        }
+        else if(determinant ==0)
+        {
+            root1 = root2 = String.format("%.2f",(-b / (2 * a)));
+        }
+        else
+        {
+            real = -b / (2 * a);
+            imaginary = Math.sqrt(-determinant) / (2 * a);
 
+            root1 = String.format("%.2f",real) + "+" + String.format("%.2f", imaginary) + "i";
+            root2 = String.format("%.2f", real) + "-" + String.format("%.2f", imaginary) + "i";
+        }
+        System.out.println("Root 1 is: " + root1);
+        System.out.println("Root 2 is: " + root2);
+    }
 }
