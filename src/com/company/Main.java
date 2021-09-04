@@ -49,6 +49,14 @@ public class Main {
 //        examples.sumOfNNumbersUsingForEach();
 //        examples.vowelOrConstant();
 //        examples.rootsOfQuadraticEq(2.3,4, 5.6 );
+//        examples.pyramidUsingAsterisk();
+//        examples.pyramidUsingNumbers();
+//        examples.pyramidUsingAlphabets();
+//        examples.invertedHalfPyramidUsingAsterisk();
+//        examples.removeAllWhiteSpaces();
+//        examples.stringToDate();
+//        examples.stringToDateUsingFormatter();
+       examples.concatenateTwoArrays();
 
     }
 

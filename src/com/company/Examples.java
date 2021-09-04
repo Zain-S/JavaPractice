@@ -1,5 +1,9 @@
 package com.company;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Examples {
@@ -152,5 +156,86 @@ public class Examples {
         }
         System.out.println("Root 1 is: " + root1);
         System.out.println("Root 2 is: " + root2);
+    }
+
+    //print half pyramid using *
+    public void pyramidUsingAsterisk()
+    {
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    //print half pyramid using *
+    public void pyramidUsingNumbers()
+    {
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    //print half pyramid using *
+    public void pyramidUsingAlphabets()
+    {
+        for (char i = 'A'; i <= 'E'; i++) {
+            for (char j = 'A'; j <= i; j++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    //print Inverted half pyramid using *
+    public void invertedHalfPyramidUsingAsterisk()
+    {
+        for (int i = 5; i >= 1; i--) {
+            for (int j = i; j > 0; j--) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    //Remove All Whitespaces
+    public void removeAllWhiteSpaces(){
+        String sentence = "T    his is b  ett     er.";
+        System.out.println("Original sentence: " + sentence);
+
+        sentence = sentence.replaceAll("\\s", "");
+        System.out.println("After replacement: " + sentence);
+    }
+
+    //Convert String to Date using predefined formatters
+    public void stringToDate()
+    {
+        String string = "2017-07-25";
+        LocalDate date = LocalDate.parse(string, DateTimeFormatter.ISO_DATE);
+        System.out.println(date);
+    }
+
+    //String to Date using pattern formatters
+    public void stringToDateUsingFormatter()
+    {
+        String string = "July 25, 2017";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM d, yyyy", Locale.ENGLISH);
+        LocalDate date = LocalDate.parse(string, formatter);
+        System.out.println(date);
+    }
+
+    //Concatenate Two Arrays using arraycopy
+    public void concatenateTwoArrays()
+    {
+        int[] array1 = {1, 2, 3};
+        int[] array2 = {4, 5, 6};
+        int[] result = new int[array1.length + array2.length];
+        System.arraycopy(array1, 0, result, 0, array1.length);
+        System.arraycopy(array2, 0, result, array1.length, array2.length);
+        System.out.println(Arrays.toString(result));
     }
 }
