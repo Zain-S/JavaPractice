@@ -53,7 +53,7 @@ public class Examples {
 
     //example
     //simple calculator using switch
-    public void calculatorv1()
+    public void calculatorV1()
     {
         float result;
         Scanner scanner = new Scanner(System.in);
@@ -114,4 +114,19 @@ public class Examples {
         }
         System.out.println("Sum of " + number.length + " numbers is: " + sum);
     }
+
+    //example 8 Check Whether an Alphabet is Vowel or Consonant
+    public void vowelOrConstant()
+    {
+        System.out.print("Enter a character: ");
+        Scanner scanner = new Scanner(System.in);
+        char ch = scanner.next().charAt(0);
+        if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+            System.out.println("Character is vowel");
+        else
+            System.out.println("Character is constant");
+        scanner.close();
+    }
+
+
 }

@@ -44,9 +44,10 @@ public class Main {
 //        examples.addition();
 //        examples.multiplicationFloat();
 //        examples.ascii();
-//        examples.calculatorv1();
+//        examples.calculatorV1();
 //        examples.sumOfNNumbers();
 //        examples.sumOfNNumbersUsingForEach();
+//        examples.vowelOrConstant();
     }
 
     //instance of practice
