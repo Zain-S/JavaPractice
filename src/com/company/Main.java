@@ -36,6 +36,9 @@ public class Main {
 //        ThisExample thisExample = new ThisExample(2, 4);
 //        System.out.println("4 factorial = " + OOP1.factorial(4));
 
+        Main main = new Main();
+//        main.instanceOfPractice();
+
         Examples examples = new Examples();
 //        examples.printInteger();
 //        examples.addition();
@@ -44,5 +47,15 @@ public class Main {
 //        examples.calculatorv1();
 //        examples.sumOfNNumbers();
 //        examples.sumOfNNumbersUsingForEach();
+    }
+
+    //instance of practice
+    void instanceOfPractice()
+    {
+        Factorial factorial = new Factorial();
+        boolean result1 = factorial instanceof Factorial;
+        boolean result2 = factorial instanceof OOP1;
+        System.out.println("obj is an instance of OOP1: " + result2);
+        System.out.println("obj is an instance of Factorial: " + result1);
     }
 }
