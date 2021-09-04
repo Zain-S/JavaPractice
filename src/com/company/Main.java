@@ -34,6 +34,8 @@ public class Main {
 //        System.out.println(c2);
 //        System.out.println(c3);
 
+        ThisExample thisExample = new ThisExample(2, 4);
+
 
 
         Examples examples = new Examples();

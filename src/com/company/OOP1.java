@@ -28,7 +28,8 @@ public class OOP1 {
     @Override
     public String toString(){
         return this.a + " + " + this.b + "i";
-    }
+    }    //this keyword in constructor overloading
+
 
     public String formatNumber(int value) {
         return String.format("%d", value);
@@ -79,5 +80,24 @@ class ObjectInsideClass {
     public static void main(String[] args) {
         ObjectInsideClass led = new ObjectInsideClass();
         led.turnOn();
+    }
+}
+
+//Passing this as an Argument
+class ThisExample {
+    int x;
+    int y;
+    ThisExample(int x, int y) {
+        this.x = x;
+        this.y = y;
+        System.out.println("Before passing this to addTwo() method:");
+        System.out.println("x = " + this.x + ", y = " + this.y);
+        add(this);
+        System.out.println("After passing this to addTwo() method:");
+        System.out.println("x = " + this.x + ", y = " + this.y);
+    }
+    void add(ThisExample o){
+        o.x += 2;
+        o.y += 2;
     }
 }
