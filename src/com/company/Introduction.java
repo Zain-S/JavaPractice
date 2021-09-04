@@ -1,6 +1,6 @@
 package com.company;
 
-public class Operators {
+public class Introduction {
     //Arithmetic Operations Practice
     public void divisionPractice()
     {

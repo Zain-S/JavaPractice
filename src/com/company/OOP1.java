@@ -1,6 +1,6 @@
 package com.company;
 
-public class OOP1 {
+public class OOP1 extends Factorial {
     //empty constructor
 //    OOP1(){
 //        //empty constructor
@@ -99,5 +99,15 @@ class ThisExample {
     void add(ThisExample o){
         o.x += 2;
         o.y += 2;
+    }
+}
+
+//recursion example
+class Factorial {
+    static int factorial( int n ) {
+        if (n != 0)  // termination condition
+            return n * factorial(n-1); // recursive call
+        else
+            return 1;
     }
 }

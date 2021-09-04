@@ -3,11 +3,11 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Operators operators = new Operators();
-//        operators.divisionPractice();
-//        operators.incrementDecrement();
-//        operators.ternaryOperator();
-//        operators.nestedTernaryOperator();
+        Introduction introduction = new Introduction();
+//        introduction.divisionPractice();
+//        introduction.incrementDecrement();
+//        introduction.ternaryOperator();
+//        introduction.nestedTernaryOperator();
 
         FlowControl flowControl = new FlowControl();
 //        flowControl.forEach();
@@ -33,10 +33,8 @@ public class Main {
 //        System.out.println(c1);
 //        System.out.println(c2);
 //        System.out.println(c3);
-
-        ThisExample thisExample = new ThisExample(2, 4);
-
-
+//        ThisExample thisExample = new ThisExample(2, 4);
+//        System.out.println("4 factorial = " + OOP1.factorial(4));
 
         Examples examples = new Examples();
 //        examples.printInteger();
