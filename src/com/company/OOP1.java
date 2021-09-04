@@ -1,6 +1,35 @@
 package com.company;
 
 public class OOP1 {
+    //empty constructor
+//    OOP1(){
+//        //empty constructor
+//    }
+
+    //this keyword practice
+    int instVar;
+//    OOP1(int instVar){
+//        this.instVar = instVar;
+//        System.out.println("this reference = " + this);
+//    }
+
+    //this keyword in constructor overloading
+    public int a, b;
+    public OOP1( int i, int j ){
+        this.a = i;
+        this.b = j;
+    }
+    public OOP1(int i){
+        this(i, i);
+    }
+    public OOP1(){
+        this(0);
+    }
+    @Override
+    public String toString(){
+        return this.a + " + " + this.b + "i";
+    }
+
     public String formatNumber(int value) {
         return String.format("%d", value);
     }
@@ -36,7 +65,6 @@ public class OOP1 {
         System.out.println("Comparing 1st and 2nd: " + first.equals(second));
         System.out.println("Comparing 2nd and 3rd: " + second.equals(third));
     }
-
 
 }
 

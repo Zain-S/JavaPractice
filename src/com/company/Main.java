@@ -25,6 +25,15 @@ public class Main {
 
         OOP1 oop1 = new OOP1();
 //        System.out.println(oop1.formatNumber(89.9001151));
+        OOP1 oop2 = new OOP1(8);
+//        System.out.println("object reference = " + oop2);
+//        OOP1 c1 = new OOP1(2, 3);
+//        OOP1 c2 = new OOP1(3);
+//        OOP1 c3 = new OOP1();
+//        System.out.println(c1);
+//        System.out.println(c2);
+//        System.out.println(c3);
+
 
 
         Examples examples = new Examples();
