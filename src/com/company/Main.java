@@ -56,7 +56,9 @@ public class Main {
 //        examples.removeAllWhiteSpaces();
 //        examples.stringToDate();
 //        examples.stringToDateUsingFormatter();
-       examples.concatenateTwoArrays();
+//       examples.concatenateTwoArrays();
+        examples.getCurrentDateTime();
+
 
     }
 

@@ -1,6 +1,7 @@
 package com.company;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.Locale;
@@ -237,5 +238,12 @@ public class Examples {
         System.arraycopy(array1, 0, result, 0, array1.length);
         System.arraycopy(array2, 0, result, array1.length, array2.length);
         System.out.println(Arrays.toString(result));
+    }
+
+    //Get Current date and time in default form
+    public void getCurrentDateTime()
+    {
+        LocalDateTime current = LocalDateTime.now();
+        System.out.println("Current Date and Time is: " + current);
     }
 }
