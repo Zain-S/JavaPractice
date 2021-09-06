@@ -38,6 +38,8 @@ public class Main {
 
         Main main = new Main();
 //        main.instanceOfPractice();
+//        main.dogClass();
+        main.dog2Class();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -56,8 +58,8 @@ public class Main {
 //        examples.removeAllWhiteSpaces();
 //        examples.stringToDate();
 //        examples.stringToDateUsingFormatter();
-//       examples.concatenateTwoArrays();
-        examples.getCurrentDateTime();
+//        examples.concatenateTwoArrays();
+//        examples.getCurrentDateTime();
 
 
     }
@@ -71,4 +73,22 @@ public class Main {
         System.out.println("obj is an instance of OOP1: " + result2);
         System.out.println("obj is an instance of Factorial: " + result1);
     }
+
+    //Method overriding in Java Inheritance
+    void dogClass()
+    {
+        Dog dog = new Dog();
+        dog.eat();
+        dog.bark();
+    }
+
+    //super Keyword in Inheritance
+    void dog2Class()
+    {
+        Dog2 labrador = new Dog2();
+        labrador.eat();
+        labrador.bark();
+    }
+
+
 }
