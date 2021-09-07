@@ -1,5 +1,7 @@
 package com.company;
 
+import static com.company.Polygon.type;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -43,8 +45,10 @@ public class Main {
 //        main.dog3Class();
 //        main.dog4Class();
 //        main.animal5Class();
-        main.polygonClass();
-
+//        main.polygonClass();
+//        System.out.println(type);
+//        main.polygon2Class();
+        main.polygon3Class();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -117,6 +121,26 @@ public class Main {
     {
         Rectangle r1 = new Rectangle();
         r1.getArea(5, 6);
+    }
+
+    //default methods in Java Interfaces
+    void polygon2Class()
+    {
+        Rectangle2 r1 = new Rectangle2();
+        r1.getArea();
+        r1.getSides();
+        Square2 s1 = new Square2();
+        s1.getArea();
+        s1.getSides();
+    }
+
+    //Private and static Methods in Interface
+    void polygon3Class()
+    {
+        Triangle3 t1 = new Triangle3(2, 3, 4);
+        t1.getArea();
+        t1.getPerimeter(2, 3, 4);
+        Polygon3.example();
     }
 }
 
