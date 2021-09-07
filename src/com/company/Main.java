@@ -39,7 +39,7 @@ public class Main {
         Main main = new Main();
 //        main.instanceOfPractice();
 //        main.dogClass();
-        main.dog2Class();
+        main.dog3Class();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -90,5 +90,10 @@ public class Main {
         labrador.bark();
     }
 
-
+    //Implementing Abstract Methods
+    void dog3Class() {
+        Dog3 d1 = new Dog3();
+        d1.makeSound();
+        d1.eat();
+    }
 }

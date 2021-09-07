@@ -36,3 +36,16 @@ class Dog2 extends Animal2 {
         System.out.println("I can bark");
     }
 }
+
+//Implementing Abstract Methods
+abstract class Animal3 {
+    abstract void makeSound();
+    public void eat() {
+        System.out.println("I can eat.");
+    }
+}
+class Dog3 extends Animal3 {
+    public void makeSound() {
+        System.out.println("Bark bark");
+    }
+}
