@@ -39,7 +39,12 @@ public class Main {
         Main main = new Main();
 //        main.instanceOfPractice();
 //        main.dogClass();
-        main.dog3Class();
+//        main.dog2Class();
+//        main.dog3Class();
+//        main.dog4Class();
+//        main.animal5Class();
+        main.polygonClass();
+
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -96,4 +101,22 @@ public class Main {
         d1.makeSound();
         d1.eat();
     }
+
+    //Accesses Constructor of Abstract Classes
+    void dog4Class(){
+        Dog4 d1 = new Dog4();
+    }
+
+    //Static function in abstract class
+    void animal5Class(){
+        Animal5.eat();
+    }
+
+    //Implementing an Interface
+    void polygonClass()
+    {
+        Rectangle r1 = new Rectangle();
+        r1.getArea(5, 6);
+    }
 }
+
