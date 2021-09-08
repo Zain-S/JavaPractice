@@ -281,3 +281,19 @@ class AnonymousDemo {
         polygon4.display();
     }
 }
+
+//Anonymous Class Implementing an Interface
+interface Polygon5 {
+    public void display();
+}
+
+class AnonymousDemo5 {
+    public void createClass() {
+        Polygon5 p1 = new Polygon5() {
+            public void display() {
+                System.out.println("Inside an anonymous class.");
+            }
+        };
+        p1.display();
+    }
+}

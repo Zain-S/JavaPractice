@@ -55,7 +55,8 @@ public class Main {
 //        main.accessOuterClassMember();
 //        main.staticInnerClass();
 //        main.staticNestedClass();
-        main.anonymousClass();
+//        main.anonymousClass();
+        main.anonymousClassWithInterface();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -204,6 +205,12 @@ public class Main {
     //Anonymous Class Extending a Class
     void anonymousClass(){
         AnonymousDemo an = new AnonymousDemo();
+        an.createClass();
+    }
+
+    //Anonymous Class Implementing an Interface
+    void anonymousClassWithInterface(){
+        AnonymousDemo5 an = new AnonymousDemo5();
         an.createClass();
     }
 }
