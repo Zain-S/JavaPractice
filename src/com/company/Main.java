@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 import static com.company.Polygon.type;
 
 public class Main {
@@ -58,7 +60,9 @@ public class Main {
 //        main.anonymousClass();
 //        main.anonymousClassWithInterface();
 //        main.singletonClass();
-        main.javaEnum();
+//        main.javaEnum();
+//        main.javaEnumWithSwitch();
+        main.javaEnumMethods();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -223,13 +227,35 @@ public class Main {
         db1.getConnection();
     }
 
-    //Java Enum
+    //Java Enum Class
     void javaEnum(){
         System.out.println(Size.SMALL);
         System.out.println(Size.MEDIUM);
         System.out.println(Size.LARGE);
         System.out.println(Size.EXTRALARGE);
-        Size pizzaSize = Size.SMALL;
+        Size pizzaSize = Size.LARGE;
         System.out.println("Pizza Size is: " + pizzaSize);
+
+        System.out.println("The size of the pizza is " + Size.LARGE.getSize());
     }
+
+    //Java Enum with the switch statement
+    void javaEnumWithSwitch(){
+        Test2 t1 = new Test2(Size.MEDIUM);
+        t1.orderPizza();
+    }
+
+    //Java Enum Methods
+    void javaEnumMethods(){
+        Size pizzaSize = Size.LARGE;
+        System.out.println("Ordinal is: " + pizzaSize.ordinal());
+        System.out.println("Comparing to Medium: " + pizzaSize.compareTo(Size.MEDIUM));
+        System.out.println("String representation: " + Size.SMALL.toString());
+        Size extraSmall = Size.valueOf("SMALL");
+        System.out.println("Value of Extra Small: " + extraSmall);
+        Size[] enumArray = Size.values();
+        System.out.println(Arrays.toString(enumArray));
+
+    }
+
 }
