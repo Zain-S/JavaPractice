@@ -52,7 +52,8 @@ public class Main {
 //        main.polymorphicVariables();
 //        main.staticVariables();
 //        main.nestedClass();
-        main.accessOuterClassMember();
+//        main.accessOuterClassMember();
+        main.staticInnerClass();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -181,6 +182,12 @@ public class Main {
         Car.Engine c2engine = car2.new Engine();
         c2engine.setEngine();
         System.out.println("Engine Type for 4WD = " + c2engine.getEngineType());
+    }
+
+    //Static Inner Class
+    void staticInnerClass(){
+        MotherBoard.USB usb = new MotherBoard.USB();
+        System.out.println("Total Ports = " + usb.getTotalPorts());
     }
 }
 
