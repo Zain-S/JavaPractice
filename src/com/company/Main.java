@@ -233,9 +233,3 @@ public class Main {
         System.out.println("Pizza Size is: " + pizzaSize);
     }
 }
-
-//Java Enum
-enum Size {
-    SMALL, MEDIUM, LARGE, EXTRALARGE
-}
-
