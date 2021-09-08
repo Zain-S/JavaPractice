@@ -53,7 +53,8 @@ public class Main {
 //        main.staticVariables();
 //        main.nestedClass();
 //        main.accessOuterClassMember();
-        main.staticInnerClass();
+//        main.staticInnerClass();
+        main.staticNestedClass();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -189,5 +190,16 @@ public class Main {
         MotherBoard.USB usb = new MotherBoard.USB();
         System.out.println("Total Ports = " + usb.getTotalPorts());
     }
+
+    //Static Nested Class
+    void staticNestedClass(){
+        Animal6 animal = new Animal6();
+        Animal6.Reptile reptile = animal.new Reptile();
+        reptile.displayInfo();
+        Animal6.Mammal mammal = new Animal6.Mammal();
+        mammal.displayInfo();
+    }
+
+
 }
 
