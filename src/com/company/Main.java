@@ -57,7 +57,8 @@ public class Main {
 //        main.staticNestedClass();
 //        main.anonymousClass();
 //        main.anonymousClassWithInterface();
-        main.singletonClass();
+//        main.singletonClass();
+        main.javaEnum();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -221,5 +222,20 @@ public class Main {
         db1= Database.getInstance();
         db1.getConnection();
     }
+
+    //Java Enum
+    void javaEnum(){
+        System.out.println(Size.SMALL);
+        System.out.println(Size.MEDIUM);
+        System.out.println(Size.LARGE);
+        System.out.println(Size.EXTRALARGE);
+        Size pizzaSize = Size.SMALL;
+        System.out.println("Pizza Size is: " + pizzaSize);
+    }
+}
+
+//Java Enum
+enum Size {
+    SMALL, MEDIUM, LARGE, EXTRALARGE
 }
 
