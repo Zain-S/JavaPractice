@@ -265,3 +265,19 @@ class Animal6 {
     }
 }
 
+//Anonymous Class Extending a Class
+class Polygon4{
+    public void display() {
+        System.out.println("Inside the Polygon class");
+    }
+}
+class AnonymousDemo {
+    public void createClass() {
+        Polygon4 polygon4 = new Polygon4() {
+            public void display(){
+                System.out.println("Inside an anonymous class.");
+            }
+        };
+        polygon4.display();
+    }
+}

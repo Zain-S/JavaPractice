@@ -54,7 +54,8 @@ public class Main {
 //        main.nestedClass();
 //        main.accessOuterClassMember();
 //        main.staticInnerClass();
-        main.staticNestedClass();
+//        main.staticNestedClass();
+        main.anonymousClass();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -200,6 +201,10 @@ public class Main {
         mammal.displayInfo();
     }
 
-
+    //Anonymous Class Extending a Class
+    void anonymousClass(){
+        AnonymousDemo an = new AnonymousDemo();
+        an.createClass();
+    }
 }
 
