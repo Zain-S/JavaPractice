@@ -48,7 +48,11 @@ public class Main {
 //        main.polygonClass();
 //        System.out.println(type);
 //        main.polygon2Class();
-        main.polygon3Class();
+//        main.polygon3Class();
+//        main.polymorphicVariables();
+//        main.staticVariables();
+//        main.nestedClass();
+        main.accessOuterClassMember();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -141,6 +145,42 @@ public class Main {
         t1.getArea();
         t1.getPerimeter(2, 3, 4);
         Polygon3.example();
+    }
+
+    //Polymorphic Variables
+    void polymorphicVariables(){
+        ProgrammingLanguage pl;
+        pl = new ProgrammingLanguage();
+        pl.display();
+        pl = new Java();
+        pl.display();
+    }
+
+    //Static Variables
+    void staticVariables(){
+        System.out.println(Test.AGE);
+        System.out.println(Test.age);
+    }
+
+    //Java Nested and Inner Class
+    void nestedClass(){
+        CPU cpu = new CPU();
+        CPU.Processor processor = cpu.new Processor();
+        CPU.RAM ram = cpu.new RAM();
+        System.out.println("Processor Cache = " + processor.getCache());
+        System.out.println("Ram Clock speed = " + ram.getClockSpeed());
+    }
+
+    //Accessing Members of Outer Class within Inner Class
+    void accessOuterClassMember(){
+        Car car1 = new Car("Mazda", "8WD");
+        Car.Engine engine = car1.new Engine();
+        engine.setEngine();
+        System.out.println("Engine Type for 8WD= " + engine.getEngineType());
+        Car car2 = new Car("Crysler", "4WD");
+        Car.Engine c2engine = car2.new Engine();
+        c2engine.setEngine();
+        System.out.println("Engine Type for 4WD = " + c2engine.getEngineType());
     }
 }
 

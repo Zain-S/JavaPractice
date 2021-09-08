@@ -147,3 +147,95 @@ class Triangle3 implements Polygon3 {
         System.out.println("Area: " + area);
     }
 }
+
+//Polymorphic Variables
+class ProgrammingLanguage {
+    public void display() {
+        System.out.println("I am Programming Language.");
+    }
+}
+class Java extends ProgrammingLanguage {
+    @Override
+    public void display() {
+        System.out.println("I am Object-Oriented Programming Language.");
+    }
+}
+
+//Static Variables
+class Test {
+    static final int AGE = 16;
+    static int age = 20;
+}
+
+//Use of static block in java
+class StaticBlock {
+    static int a = 23;
+    static int b;
+    static int max;
+    static {
+        System.out.println("First Static block.");
+        b = a * 4;
+    }
+    static {
+        System.out.println("Second Static block.");
+        max = 30;
+    }
+    static void display() {
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("max = " + max);
+    }
+    public static void main(String args[]) {
+        display();
+    }
+}
+
+//Java Nested and Inner Class
+class CPU {
+    double price;
+    class Processor{
+        double cores;
+        String manufacturer;
+        double getCache(){
+            return 4.3;
+        }
+    }
+    protected class RAM{
+        double memory;
+        String manufacturer;
+        double getClockSpeed(){
+            return 5.5;
+        }
+    }
+}
+
+//Accessing Members of Outer Class within Inner Class
+class Car {
+    private String carName;
+    private String carType;
+    public Car(String name, String type) {
+        this.carName = name;
+        this.carType = type;
+    }
+    private String getCarName() {
+        return this.carName;
+    }
+    class Engine {
+        private String engineType;
+        void setEngine() {
+            if(Car.this.carType.equals("4WD")){
+                if(Car.this.getCarName().equals("Crysler")) {
+                    this.engineType = "Smaller";
+                } else {
+                    this.engineType = "Bigger";
+                }
+            }else{
+                this.engineType = "Bigger";
+            }
+        }
+        String getEngineType(){
+            return engineType;
+            //this.engineType & engineType are same
+        }
+    }
+}
