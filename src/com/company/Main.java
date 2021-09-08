@@ -56,7 +56,8 @@ public class Main {
 //        main.staticInnerClass();
 //        main.staticNestedClass();
 //        main.anonymousClass();
-        main.anonymousClassWithInterface();
+//        main.anonymousClassWithInterface();
+        main.singletonClass();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -212,6 +213,13 @@ public class Main {
     void anonymousClassWithInterface(){
         AnonymousDemo5 an = new AnonymousDemo5();
         an.createClass();
+    }
+
+    //Use of Singleton in Java
+    void singletonClass(){
+        Database db1;
+        db1= Database.getInstance();
+        db1.getConnection();
     }
 }
 

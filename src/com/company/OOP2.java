@@ -286,7 +286,6 @@ class AnonymousDemo {
 interface Polygon5 {
     public void display();
 }
-
 class AnonymousDemo5 {
     public void createClass() {
         Polygon5 p1 = new Polygon5() {
@@ -295,5 +294,21 @@ class AnonymousDemo5 {
             }
         };
         p1.display();
+    }
+}
+
+//Use of Singleton in Java
+class Database {
+    private static Database dbObject;
+    private Database() {
+    }
+    public static Database getInstance() {
+        if(dbObject == null) {
+            dbObject = new Database();
+        }
+        return dbObject;
+    }
+    public void getConnection() {
+        System.out.println("You are now connected to the database.");
     }
 }
