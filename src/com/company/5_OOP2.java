@@ -2,7 +2,7 @@ package com.company;
 
 import java.lang.Math;
 
-public class OOP2 {}
+class OOP2 {}
 
 //Method overriding in Java Inheritance
 class Animal {

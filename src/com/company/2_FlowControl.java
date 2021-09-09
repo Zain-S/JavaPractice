@@ -1,6 +1,6 @@
 package com.company;
 
-public class FlowControl {
+class FlowControl {
     public void forEach(){
         // create an array
         int[] numbers = {3, 7, 5, -5};

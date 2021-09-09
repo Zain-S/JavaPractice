@@ -1,6 +1,6 @@
 package com.company;
 
-public class OOP1 extends Factorial {
+class OOP1 extends Factorial {
     //empty constructor
 //    OOP1(){
 //        //empty constructor
