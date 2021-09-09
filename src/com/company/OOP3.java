@@ -168,3 +168,37 @@ class Test2 {
         }
     }
 }
+
+//enum Constructor
+enum Size2 {
+    SMALL("The size is small."),
+    MEDIUM("The size is medium."),
+    LARGE("The size is large."),
+    EXTRALARGE("The size is extra large.");
+    private final String pizzaSize;
+    private Size2(String pizzaSize) {
+        this.pizzaSize = pizzaSize;
+    }
+    public String getSize() {
+        return pizzaSize;
+    }
+}
+
+//Java enum Strings
+enum Size3 {
+    SMALL {
+        public String toString() {
+            return "The size is small.";
+        }
+    },
+    MEDIUM {
+        public String toString() {
+            return "The size is medium.";
+        }
+    };
+}
+
+//Java Class Reflection
+class Animal7 {
+
+}

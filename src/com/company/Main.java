@@ -1,5 +1,8 @@
 package com.company;
 
+import java.lang.module.ModuleFinder;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 import java.util.Arrays;
 
 import static com.company.Polygon.type;
@@ -62,7 +65,11 @@ public class Main {
 //        main.singletonClass();
 //        main.javaEnum();
 //        main.javaEnumWithSwitch();
-        main.javaEnumMethods();
+//        main.javaEnumMethods();
+//        main.javaEnumConstructor();
+//        main.javaEnumString();
+//        main.javaClassReflection();
+        main.reflectionOfClassMethods();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -83,7 +90,6 @@ public class Main {
 //        examples.stringToDateUsingFormatter();
 //        examples.concatenateTwoArrays();
 //        examples.getCurrentDateTime();
-
 
     }
 
@@ -255,7 +261,52 @@ public class Main {
         System.out.println("Value of Extra Small: " + extraSmall);
         Size[] enumArray = Size.values();
         System.out.println(Arrays.toString(enumArray));
-
     }
 
+    //enum Constructor
+    void javaEnumConstructor(){
+        Size2 size = Size2.SMALL;
+        System.out.println(size.getSize());
+    }
+
+    //Java enum Strings
+    void javaEnumString(){
+        System.out.println(Size3.MEDIUM.toString());
+    }
+
+    //Java Class Reflection
+    void javaClassReflection(){
+        try {
+            Dog7 d1 = new Dog7();
+            Class obj = d1.getClass();
+            String name = obj.getName();
+            System.out.println("Name: " + name);
+            int modifier = obj.getModifiers();
+            String mod = Modifier.toString(modifier);
+            System.out.println("Modifier: " + mod);
+            Class superClass = obj.getSuperclass();
+            System.out.println("Superclass: " + superClass.getName());
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    //Reflection of Java Methods
+    void reflectionOfClassMethods(){
+        try {
+            Dog7 d1 = new Dog7();
+            Class obj = d1.getClass();
+            Method[] methods = obj.getDeclaredMethods();
+            for (Method m: methods) {
+                System.out.println("Method Name: " + m.getName());
+                System.out.println("Modifier: " + Modifier.toString(m.getModifiers()));
+                System.out.println("Return Type: " + m.getReturnType());
+                System.out.println();
+            }
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
