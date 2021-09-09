@@ -70,7 +70,9 @@ public class Main {
 //        main.javaClassReflection();
 //        main.reflectionOfClassMethods();
 //        main.reflectionOfCLassFields();
-        main.reflectionOfClassConstructor();
+//        main.reflectionOfClassConstructor();
+        ExceptionHandling exceptionHandling = new ExceptionHandling();
+        exceptionHandling.exceptionHandlingUsingTryCatch();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -355,5 +357,4 @@ public class Main {
             e.printStackTrace();
         }
     }
-
 }
