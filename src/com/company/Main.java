@@ -1,6 +1,7 @@
 package com.company;
 
 import java.lang.module.ModuleFinder;
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
@@ -69,7 +70,8 @@ public class Main {
 //        main.javaEnumConstructor();
 //        main.javaEnumString();
 //        main.javaClassReflection();
-        main.reflectionOfClassMethods();
+//        main.reflectionOfClassMethods();
+        main.reflectionOfCLassFields();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -306,6 +308,31 @@ public class Main {
             }
         }
         catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    //Reflection of Java Fields
+    void reflectionOfCLassFields(){
+        try {
+            Dog7 d1 = new Dog7();
+            Class obj = d1.getClass();
+
+            Field field1 = obj.getField("type");
+            field1.set(d1, "labrador");
+            String typeValue = (String) field1.get(d1);
+            System.out.println("Type Value: " + typeValue);
+            System.out.println("Modifier: " + Modifier.toString(field1.getModifiers()));
+            System.out.println();
+
+            Field field2 = obj.getDeclaredField("color");
+            field2.setAccessible(true);
+            field2.set(d1, "White");
+            String colorValue = (String) field2.get(d1);
+            System.out.println("Color Value: "  + colorValue);
+            System.out.println("Modifier:" + Modifier.toString(field2.getModifiers()));
+        }
+        catch(Exception e){
             e.printStackTrace();
         }
     }
