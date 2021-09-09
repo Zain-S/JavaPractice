@@ -1,9 +1,7 @@
 package com.company;
 
 import java.lang.module.ModuleFinder;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
+import java.lang.reflect.*;
 import java.util.Arrays;
 
 import static com.company.Polygon.type;
@@ -71,7 +69,8 @@ public class Main {
 //        main.javaEnumString();
 //        main.javaClassReflection();
 //        main.reflectionOfClassMethods();
-        main.reflectionOfCLassFields();
+//        main.reflectionOfCLassFields();
+        main.reflectionOfClassConstructor();
 
         Examples examples = new Examples();
 //        examples.printInteger();
@@ -336,4 +335,25 @@ public class Main {
             e.printStackTrace();
         }
     }
+
+    //Reflection of Java Constructor
+    void reflectionOfClassConstructor(){
+        try {
+            Dog7 d1 = new Dog7();
+            Class obj = d1.getClass();
+            Constructor[] constructors = obj.getDeclaredConstructors();
+            for (Constructor c : constructors
+            ) {
+                System.out.println("Constructor Name: " + c.getName());
+                System.out.println("Modifier: " + Modifier.toString(c.getModifiers()));
+                System.out.println("Parameters: " + c.getParameterCount());
+                System.out.println();
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
 }
