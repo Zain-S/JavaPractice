@@ -1,6 +1,6 @@
 package com.company;
 
-public class OOP3 {
+class OOP3 {
 }
 //Java Nested and Inner Class
 class CPU {

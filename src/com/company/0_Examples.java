@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Examples {
+class Examples {
     //example 1
     //Java Program to Print an Integer (Entered by the User)
     public void printInteger(){

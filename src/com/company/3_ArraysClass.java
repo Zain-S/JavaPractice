@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Arrays;
 
-public class ArraysClass {
+class ArraysClass {
     public void twoDArray(){
         int[][] a = {
                 {1, 2, 3},
