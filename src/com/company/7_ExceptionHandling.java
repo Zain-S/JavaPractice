@@ -54,6 +54,19 @@ class ExceptionHandling {
         }
     }
 
+    //Multiple Catch blocks
+    void multipleCatchBlocks(){
+        try {
+            list[10] = 11;
+        }
+        catch (NumberFormatException e1) {
+            System.out.println("NumberFormatException: " + e1.getMessage());
+        }
+        catch (IndexOutOfBoundsException e2) {
+            System.out.println("IndexOutOfBoundsException: " + e2.getMessage());
+        }
+    }
+
     //Exception handling using throw
     void exceptionHandlingUsingThrow(){
         try {
@@ -64,7 +77,21 @@ class ExceptionHandling {
         }
     }
     void findFile() throws IOException {
-        File newFile = new File("test.txt");
+        File newFile = new File("text.txt");
         FileInputStream stream = new FileInputStream(newFile);
+    }
+
+
+    //Throwing checked exception
+    void throwingCheckedException(){
+        try {
+            find();
+            System.out.println("Rest of code in try block");
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+    void find() throws IOException {
+        throw new IOException("File not found .....");
     }
 }
