@@ -77,7 +77,10 @@ public class Main {
 //        exceptionHandling.exceptionHandlingUsingTryCatchFinally();
 //        exceptionHandling.multipleCatchBlocks();
 //        exceptionHandling.exceptionHandlingUsingThrow();
-        exceptionHandling.throwingCheckedException();
+//        exceptionHandling.throwingCheckedException();
+//        exceptionHandling.multiCatchBlock();
+        exceptionHandling.tryWithResources();
+
 
         Examples examples = new Examples();
 //        examples.printInteger();

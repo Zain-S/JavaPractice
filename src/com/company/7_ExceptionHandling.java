@@ -94,4 +94,35 @@ class ExceptionHandling {
     void find() throws IOException {
         throw new IOException("File not found .....");
     }
+
+    //Multi-catch block
+    void multiCatchBlock(){
+        try {
+            int array[] = new int[10];
+            array[10] = 30 / 0;
+        }
+        //This is not good.
+//        catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
+//            System.out.println(e.getMessage());
+//        }
+        //This is better
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    //try-with-resources
+    void tryWithResources(){
+        String line;
+        try(BufferedReader br = new BufferedReader(new FileReader("text.txt"))){
+            while((line = br.readLine()) != null){
+                System.out.println("Line: " + line);
+            }
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+        }
+    }
 }
