@@ -1,6 +1,7 @@
 package com.company;
 
 import java.io.*;
+import java.util.Scanner;
 
 class ExceptionHandling {
     //Exception handling using try...catch
@@ -113,6 +114,7 @@ class ExceptionHandling {
     }
 
     //try-with-resources
+    //The try-with-resources statement does automatic resource management.
     void tryWithResources(){
         String line;
         try(BufferedReader br = new BufferedReader(new FileReader("text.txt"))){
@@ -122,6 +124,19 @@ class ExceptionHandling {
         }
         catch (Exception e)
         {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    //try with multiple resources
+    void tryWithMultipleResources(){
+        try (Scanner scanner = new Scanner(new File("OutputFile.txt"));
+        PrintWriter printWriter = new PrintWriter(new FileWriter("textWrite.txt"))){
+            while (scanner.hasNext()){
+                printWriter.println(scanner.nextLine());
+            }
+        }
+        catch (Exception e){
             System.out.println(e.getMessage());
         }
     }

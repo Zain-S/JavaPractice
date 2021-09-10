@@ -79,7 +79,8 @@ public class Main {
 //        exceptionHandling.exceptionHandlingUsingThrow();
 //        exceptionHandling.throwingCheckedException();
 //        exceptionHandling.multiCatchBlock();
-        exceptionHandling.tryWithResources();
+//        exceptionHandling.tryWithResources();
+        exceptionHandling.tryWithMultipleResources();
 
 
         Examples examples = new Examples();
