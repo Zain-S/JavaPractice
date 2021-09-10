@@ -72,7 +72,9 @@ public class Main {
 //        main.reflectionOfCLassFields();
 //        main.reflectionOfClassConstructor();
         ExceptionHandling exceptionHandling = new ExceptionHandling();
-        exceptionHandling.exceptionHandlingUsingTryCatch();
+//        exceptionHandling.exceptionHandlingUsingTryCatch();
+//        exceptionHandling.exceptionHandlingUsingFinallyBlock();
+        exceptionHandling.exceptionHandlingUsingThrow();
 
         Examples examples = new Examples();
 //        examples.printInteger();
