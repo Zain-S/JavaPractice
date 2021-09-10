@@ -149,4 +149,14 @@ class ExceptionHandling {
         wordList.add("program");
         System.out.println("Word list: " + wordList);
     }
+
+    //@SuppressWarnings annotation example
+    @Deprecated
+    void deprecatedMethod() {
+        System.out.println("Deprecated method");
+    }
+    @SuppressWarnings("deprecated")
+    void deprecatedAnnotation(){
+        deprecatedMethod();
+    }
 }

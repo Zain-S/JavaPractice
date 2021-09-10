@@ -81,7 +81,8 @@ public class Main {
 //        exceptionHandling.multiCatchBlock();
 //        exceptionHandling.tryWithResources();
 //        exceptionHandling.tryWithMultipleResources();
-        exceptionHandling.annotationPlacement();
+//        exceptionHandling.annotationPlacement();
+        exceptionHandling.deprecatedAnnotation();
 
 
         Examples examples = new Examples();
