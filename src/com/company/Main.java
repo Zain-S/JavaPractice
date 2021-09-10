@@ -80,7 +80,8 @@ public class Main {
 //        exceptionHandling.throwingCheckedException();
 //        exceptionHandling.multiCatchBlock();
 //        exceptionHandling.tryWithResources();
-        exceptionHandling.tryWithMultipleResources();
+//        exceptionHandling.tryWithMultipleResources();
+        exceptionHandling.annotationPlacement();
 
 
         Examples examples = new Examples();

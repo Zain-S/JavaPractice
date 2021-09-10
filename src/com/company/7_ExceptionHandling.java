@@ -1,6 +1,7 @@
 package com.company;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 class ExceptionHandling {
@@ -139,5 +140,13 @@ class ExceptionHandling {
         catch (Exception e){
             System.out.println(e.getMessage());
         }
+    }
+
+    //Annotation placement
+    @SuppressWarnings("unchecked")
+    void annotationPlacement() {
+        ArrayList wordList = new ArrayList<>();
+        wordList.add("program");
+        System.out.println("Word list: " + wordList);
     }
 }
