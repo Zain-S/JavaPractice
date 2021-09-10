@@ -1,8 +1,6 @@
 package com.company;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 
 class ExceptionHandling {
     //Exception handling using try...catch
@@ -26,6 +24,33 @@ class ExceptionHandling {
         }
         finally {
             System.out.println("This is the finally block");
+        }
+    }
+
+    //Java Exception Handling using Try Catch finally
+    private int[] list = {5, 6, 8, 9, 2};
+    void exceptionHandlingUsingTryCatchFinally(){
+        PrintWriter out = null;
+        try{
+            System.out.println("Entering try statement");
+            out = new PrintWriter(new FileWriter("OutputFile.txt"));
+            for (int i = 0; i < 7; i++) {
+                out.println("Value at: " + i + " = " + list[i]);
+            }
+        }
+        catch (Exception e) {
+            System.out.println("Exception: " + e.getMessage());
+        }
+        finally {
+            if(out!=null)
+            {
+                System.out.println("Closing Print Writer.");
+                out.close();
+            }
+            else
+            {
+                System.out.println("Print Writer didn't open.");
+            }
         }
     }
 
