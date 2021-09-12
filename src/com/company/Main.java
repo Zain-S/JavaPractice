@@ -92,7 +92,12 @@ public class Main {
 //        list.arrayToArrayList();
 //        list.arrayListSingleLine();
 //        list.vectors();
-        list.stack();
+//        list.stack();
+        QueueClass queueClass = new QueueClass();
+//        queueClass.linkedList();
+        DequeClass dequeClass = new DequeClass();
+//        dequeClass.arrayDeque();
+//        dequeClass.linkedList();
 
 
         Examples examples = new Examples();
