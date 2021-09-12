@@ -82,7 +82,17 @@ public class Main {
 //        exceptionHandling.tryWithResources();
 //        exceptionHandling.tryWithMultipleResources();
 //        exceptionHandling.annotationPlacement();
-        exceptionHandling.deprecatedAnnotation();
+//        exceptionHandling.deprecatedAnnotation();
+        ListClass list = new ListClass();
+//        list.arrayListEx1();
+//        list.arrayListEx2();
+//        list.linkedList();
+//        list.LinkedListUsingIterator();
+//        list.arrayListToArray();
+//        list.arrayToArrayList();
+//        list.arrayListSingleLine();
+//        list.vectors();
+        list.stack();
 
 
         Examples examples = new Examples();
