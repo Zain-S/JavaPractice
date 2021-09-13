@@ -100,7 +100,10 @@ public class Main {
 //        dequeClass.linkedList();
 //        dequeClass.arrayDequeAsStack();
         BlockingQueueClass blockingQueueClass = new BlockingQueueClass();
-        blockingQueueClass.arrayBlockingQueue();
+//        blockingQueueClass.arrayBlockingQueue();
+        MapInterface mapInterface = new MapInterface();
+//        mapInterface.hashMapClass();
+        mapInterface.treeMapClass();
 
 
         Examples examples = new Examples();
