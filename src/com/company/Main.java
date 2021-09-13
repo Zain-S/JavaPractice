@@ -99,6 +99,8 @@ public class Main {
 //        dequeClass.arrayDeque();
 //        dequeClass.linkedList();
 //        dequeClass.arrayDequeAsStack();
+        BlockingQueueClass blockingQueueClass = new BlockingQueueClass();
+        blockingQueueClass.arrayBlockingQueue();
 
 
         Examples examples = new Examples();

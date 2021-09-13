@@ -4,6 +4,9 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 class QueueClass {
     Queue<Integer> numbers = new LinkedList<>();
@@ -99,5 +102,33 @@ class DequeClass extends QueueClass{
         System.out.println("Removed element: " + element);
 
         System.out.println("Stack: " + animals);
+    }
+}
+class BlockingQueueClass extends QueueClass{
+    ArrayBlockingQueue<Integer> numbers = new ArrayBlockingQueue<>(5);
+    LinkedBlockingQueue<String> animals = new LinkedBlockingQueue<>();
+    void arrayBlockingQueue(){
+        try{
+            //Adding Elements is ArrayBLockingQueue...
+            System.out.println("Adding Elements is ArrayBLockingQueue...");
+            numbers.put(1);
+            numbers.add(2);
+            numbers.offer(3);
+            System.out.println("BLockingQueue: " + numbers);
+        }
+        catch (Exception e)
+        {
+            e.getStackTrace();
+        }
+    }
+    void linkedBlockingQueue(){
+        // Using add()
+        animals.add("Dog");
+        animals.add("Cat");
+
+        // Using offer()
+        animals.offer("Horse");
+        System.out.println("LinkedBlockingQueue: " + animals);
+        //same as array.....
     }
 }
