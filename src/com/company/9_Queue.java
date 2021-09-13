@@ -77,5 +77,27 @@ class DequeClass extends QueueClass{
         System.out.println("LinkedList after removeLast(): " + animals);
     }
 
+    // ArrayDeque as a Stack
+    void arrayDequeAsStack(){
+        ArrayDeque<String> animals = new ArrayDeque<>();
 
+        //Adding elements...
+        System.out.println("Adding elements...");
+        animals.push("Dog");
+        animals.push("Cat");
+        animals.push("Horse");
+        System.out.println("Stack: " + animals);
+
+        // Accessing top element...
+        System.out.println("Accessing top element...");
+        String element = animals.peek();
+        System.out.println("Top Element: " + element);
+
+        //Removing Elements...
+        System.out.println("Removing Elements...");
+        element = animals.pop();
+        System.out.println("Removed element: " + element);
+
+        System.out.println("Stack: " + animals);
+    }
 }

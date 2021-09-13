@@ -96,8 +96,9 @@ public class Main {
         QueueClass queueClass = new QueueClass();
 //        queueClass.linkedList();
         DequeClass dequeClass = new DequeClass();
-        dequeClass.arrayDeque();
+//        dequeClass.arrayDeque();
 //        dequeClass.linkedList();
+//        dequeClass.arrayDequeAsStack();
 
 
         Examples examples = new Examples();
