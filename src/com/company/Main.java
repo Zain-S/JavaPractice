@@ -103,7 +103,7 @@ public class Main {
 //        blockingQueueClass.arrayBlockingQueue();
         MapInterface mapInterface = new MapInterface();
 //        mapInterface.hashMapClass();
-        mapInterface.treeMapClass();
+//        mapInterface.treeMapClass();
 
 
         Examples examples = new Examples();
@@ -125,6 +125,11 @@ public class Main {
 //        examples.stringToDateUsingFormatter();
 //        examples.concatenateTwoArrays();
 //        examples.getCurrentDateTime();
+//        examples.sumOfNaturalNumbersUsingRecursion();
+//        examples.findFactorialUsingRecursion();
+//        examples.binaryToDecimalUsingCustom();
+//        examples.binaryToDecimalUsingParseInt();
+        examples.decimalToBinaryUsingCustom();
 
     }
 

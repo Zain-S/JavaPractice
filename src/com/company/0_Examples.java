@@ -8,7 +8,6 @@ import java.util.Locale;
 import java.util.Scanner;
 
 class Examples {
-    //example 1
     //Java Program to Print an Integer (Entered by the User)
     public void printInteger(){
         Scanner input = new Scanner(System.in);
@@ -18,7 +17,6 @@ class Examples {
         System.out.println("Number is: " + num);
     }
 
-    //example 2
     //Java Program to Add Two Integers
     public void addition(){
         Scanner input = new Scanner(System.in);
@@ -31,7 +29,6 @@ class Examples {
         System.out.println("Addition is: " + result);
     }
 
-    //example 3
     //Java Program to Multiply two Floating Point Numbers
     public void multiplicationFloat(){
         Scanner input = new Scanner(System.in);
@@ -44,7 +41,6 @@ class Examples {
         System.out.println("Addition is: " + result);
     }
 
-    //example 4
     //Find ASCII value of a character
     public void ascii()
     {
@@ -56,7 +52,6 @@ class Examples {
         System.out.println("Ascii Value of " + ch + " is: " + ascii);
     }
 
-    //example
     //simple calculator using switch
     public void calculatorV1()
     {
@@ -91,7 +86,6 @@ class Examples {
         }
     }
 
-    //example
     //Display Sum of n Natural Numbers
     public void sumOfNNumbers(){
         Scanner scanner = new Scanner(System.in);
@@ -103,7 +97,6 @@ class Examples {
         System.out.println("Sum of " + num + " numbers is: " + sum);
     }
 
-    //example
     //Display Sum of n Natural Numbers using for each loop
     public void sumOfNNumbersUsingForEach(){
         Scanner scanner = new Scanner(System.in);
@@ -246,4 +239,85 @@ class Examples {
         LocalDateTime current = LocalDateTime.now();
         System.out.println("Current Date and Time is: " + current);
     }
+
+    //Find the Sum of Natural Numbers using Recursion
+    void sumOfNaturalNumbersUsingRecursion(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        int number = scanner.nextInt();
+        scanner.close();
+        System.out.println("Answer: " + sumUsingRecursion(number));
+    }
+    int sumUsingRecursion(int number){
+        if(number>0)
+            return number + sumUsingRecursion(number -1);
+        else
+            return number;
+    }
+
+    //Find Factorial of a Number Using Recursion
+    void findFactorialUsingRecursion(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        int number = scanner.nextInt();
+        scanner.close();
+        System.out.println("Answer: " + factorialUsingRecursion(number));
+    }
+    int factorialUsingRecursion(int number){
+        if(number!=0)
+            return number*factorialUsingRecursion(number-1);
+        else
+            return 1;
+    }
+
+    // Binary to Decimal Conversion Using Custom Method
+    void binaryToDecimalUsingCustom(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        long number = scanner.nextLong();
+        scanner.close();
+        System.out.println("Answer: " + convertBinaryToDecimal(number));
+    }
+    int convertBinaryToDecimal(long number){
+        int decimalNumber = 0, i = 0;
+        long remainder;
+        while (number!=0){
+            remainder = number%10;
+            number /= 10;
+            decimalNumber += remainder * Math.pow(2, i);
+            i++;
+        }
+        return decimalNumber;
+    }
+
+    //Binary to Decimal Conversion Using parseInt()
+    void binaryToDecimalUsingParseInt(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        String number = scanner.next();
+        scanner.close();
+        System.out.println("Answer: " + Integer.parseInt(number, 2));
+    }
+
+    //Decimal to Binary Conversion using Custom Method
+    void decimalToBinaryUsingCustom(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        int number = scanner.nextInt();
+        scanner.close();
+        System.out.println("Answer: " + convertDecimalToBinary(number));
+    }
+    long convertDecimalToBinary(int number){
+        long binaryNumber = 0, i = 1;
+        int remainder;
+        while (number!=0){
+            remainder = number % 2;
+            number /= 2;
+            binaryNumber += remainder * i;
+            i *= 10;
+        }
+        return binaryNumber;
+    }
+
+
 }
