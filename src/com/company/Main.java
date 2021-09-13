@@ -129,7 +129,9 @@ public class Main {
 //        examples.findFactorialUsingRecursion();
 //        examples.binaryToDecimalUsingCustom();
 //        examples.binaryToDecimalUsingParseInt();
-        examples.decimalToBinaryUsingCustom();
+//        examples.decimalToBinaryUsingCustom();
+//        examples.decimalToBinaryUsingToBinaryString();
+        examples.reverseSentenceUsingRecursion();
 
     }
 

@@ -319,5 +319,27 @@ class Examples {
         return binaryNumber;
     }
 
+    // Decimal to Binary Conversion using toBinaryString()
+    void decimalToBinaryUsingToBinaryString(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        int number = scanner.nextInt();
+        scanner.close();
+        System.out.println("Answer: " + Integer.toBinaryString(number));
+    }
 
+    // Reverse a Sentence Using Recursion
+    void reverseSentenceUsingRecursion(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter String: ");
+        String sentence = scanner.next();
+        scanner.close();
+        System.out.println("Answer: " + reverseSentence(sentence));
+    }
+    String reverseSentence(String sentence){
+        if(sentence.length()>0)
+            return sentence.substring(sentence.length()-1) + reverseSentence(sentence.substring(0, sentence.length()-1));
+        else
+            return sentence;
+    }
 }
