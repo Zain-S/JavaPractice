@@ -3,6 +3,7 @@ package com.company;
 import java.lang.module.ModuleFinder;
 import java.lang.reflect.*;
 import java.util.Arrays;
+import java.util.Set;
 
 import static com.company.Polygon.type;
 
@@ -104,6 +105,16 @@ public class Main {
         MapInterface mapInterface = new MapInterface();
 //        mapInterface.hashMapClass();
 //        mapInterface.treeMapClass();
+        Algorithms algorithms = new Algorithms();
+//        algorithms.sorting();
+//        algorithms.shuffle();
+//        algorithms.dataManipulations();
+//        algorithms.binarySearch();
+//        algorithms.frequencyAndDisjoint();
+//        algorithms.minMaxValues();
+        SetClass setClass = new SetClass();
+//        setClass.iterator();
+        setClass.listIterator();
 
 
         Examples examples = new Examples();
@@ -131,7 +142,7 @@ public class Main {
 //        examples.binaryToDecimalUsingParseInt();
 //        examples.decimalToBinaryUsingCustom();
 //        examples.decimalToBinaryUsingToBinaryString();
-        examples.reverseSentenceUsingRecursion();
+//        examples.reverseSentenceUsingRecursion();
 
     }
 
