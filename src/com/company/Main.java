@@ -115,8 +115,10 @@ public class Main {
         SetClass setClass = new SetClass();
 //        setClass.iterator();
 //        setClass.listIterator();
-        InputStreamClass inputStream = new InputStreamClass();
-        inputStream.fileInputStream();
+        InputStreamClass inputStreamClass = new InputStreamClass();
+//        inputStreamClass.fileInputStream();
+        OutputStreamClass outputStreamClass = new OutputStreamClass();
+        outputStreamClass.fileOutputStream();
 
 
         Examples examples = new Examples();

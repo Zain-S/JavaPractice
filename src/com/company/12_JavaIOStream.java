@@ -1,10 +1,12 @@
 package com.company;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
 
 class JavaIOStream {
-
 }
 class InputStreamClass{
     byte[] array = new byte[100];
@@ -19,6 +21,22 @@ class InputStreamClass{
             inputStream.close();
         }
         catch(Exception e)
+        {
+            e.getStackTrace();
+        }
+    }
+}
+class OutputStreamClass{
+    String data = "This is a line of text inside the file.";
+    void fileOutputStream(){
+        try{
+            OutputStream outputStream = new FileOutputStream("OutputFile.txt");
+            byte[] dataBytes = data.getBytes(StandardCharsets.UTF_8);
+            outputStream.write(dataBytes);
+            System.out.println("Data is written to the file.");
+            outputStream.close();
+        }
+        catch (Exception e)
         {
             e.getStackTrace();
         }
