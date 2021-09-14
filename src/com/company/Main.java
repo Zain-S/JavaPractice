@@ -118,7 +118,12 @@ public class Main {
         InputStreamClass inputStreamClass = new InputStreamClass();
 //        inputStreamClass.fileInputStream();
         OutputStreamClass outputStreamClass = new OutputStreamClass();
-        outputStreamClass.fileOutputStream();
+//        outputStreamClass.fileOutputStream();
+        FileClass fileClass = new FileClass();
+//        fileClass.createNewFile();
+//        fileClass.readFile();
+//        fileClass.writeFile();
+//        fileClass.deleteFile();
 
 
         Examples examples = new Examples();
