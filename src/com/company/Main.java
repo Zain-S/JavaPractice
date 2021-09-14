@@ -114,7 +114,9 @@ public class Main {
 //        algorithms.minMaxValues();
         SetClass setClass = new SetClass();
 //        setClass.iterator();
-        setClass.listIterator();
+//        setClass.listIterator();
+        InputStreamClass inputStream = new InputStreamClass();
+        inputStream.fileInputStream();
 
 
         Examples examples = new Examples();
