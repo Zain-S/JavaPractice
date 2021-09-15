@@ -126,11 +126,20 @@ public class Main {
 //        OutputStreamClass.objectOutputStream();
 //        outputStreamClass.objectOutputStream2();
 //        outputStreamClass.bufferedOutputStream();
+
+        ReaderClass readerClass = new ReaderClass();
+//        readerClass.fileReader();
+        readerClass.inputStreamReader();
+
+        WriterClass writerClass = new WriterClass();
+//        writerClass.fileWriter();
+
         FileClass fileClass = new FileClass();
 //        fileClass.createNewFile();
 //        fileClass.readFile();
 //        fileClass.writeFile();
 //        fileClass.deleteFile();
+
 
 
         Examples examples = new Examples();
