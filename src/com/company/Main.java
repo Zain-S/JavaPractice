@@ -143,6 +143,8 @@ public class Main {
         LambdaExpression lambdaExpression = new LambdaExpression();
 //        lambdaExpression.noParameter();
 //        lambdaExpression.oneOrMoreParameter();
+//        lambdaExpression.generic();
+//        lambdaExpression.streamUsingLambda();
 
         Generics generics = new Generics();
 //        generics.genericClass();
@@ -153,6 +155,10 @@ public class Main {
 //        fileClass.readFile();
 //        fileClass.writeFile();
 //        fileClass.deleteFile();
+
+        WrapperClass wrapperClass = new WrapperClass();
+//        wrapperClass.primitiveToWrapper();
+//        wrapperClass.wrapperToPrimitive();
 
 
 

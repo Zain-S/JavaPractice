@@ -3,6 +3,8 @@ package com.company;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 class TypeCasting{
     //int to double
@@ -53,6 +55,42 @@ class LambdaExpression{
         };
         System.out.println("Lambda Reversed: " + myInterface2.reverse("Zain"));
     }
+
+    //Generic Functional Interface and Lambda Expressions
+    void generic(){
+        // reverse function
+        GenericInterface<String> reverse;
+        reverse = (data) -> {
+            String result = "";
+            for (int i = data.length()-1; i >= 0 ; i--) {
+                result += data.charAt(i);
+            }
+            return result;
+        };
+        System.out.println("ZAIN reversed: " + reverse.func("ZAIN"));
+
+        // Factorial
+        GenericInterface<Integer> factorial;
+        factorial = (data) -> {
+            int result = 1;
+            for (int i = 1; i <= data ; i++) {
+                result = i * result;
+            }
+            return result;
+        };
+        System.out.println("Factorial of 5: " + factorial.func(5));
+    }
+
+    //using lambdas with the Stream API
+    void streamUsingLambda(){
+        List<String> myPlaces = Stream.getPlaces();
+        System.out.println("Places from Nepal: ");
+        myPlaces.stream()
+                .filter((p) -> p.startsWith("Nepal"))
+                .map((p) -> p.toUpperCase())
+                .sorted()
+                .forEach((p) -> System.out.println(p));
+    }
 }
 @FunctionalInterface
 interface MyInterface{
@@ -61,6 +99,21 @@ interface MyInterface{
 @FunctionalInterface
 interface MyInterface2{
     String reverse(String string);
+}
+@FunctionalInterface
+interface GenericInterface<T>{
+    T func(T data);
+}
+class Stream{
+    static List<String> places = new ArrayList<>();
+    public static List<String> getPlaces(){
+        places.add("Nepal, Kathmandu");
+        places.add("Nepal, Pokhara");
+        places.add("India, Delhi");
+        places.add("USA, New York");
+        places.add("Africa, Nigeria");
+        return places;
+    }
 }
 
 //Generics
@@ -142,5 +195,33 @@ class FileClass {
             System.out.println("File deleted.");
         else
             System.out.println("File not deleted");
+    }
+}
+
+// Primitive Type to Wrapper Objects
+class WrapperClass{
+    // Primitive Types to Wrapper Objects
+    void primitiveToWrapper(){
+        int a = 5;
+        double b = 5.5;
+        Integer obj1 = a;
+        Double obj2 = b;
+        if(obj1 instanceof Integer) {
+            System.out.println("An object of Integer is created.");
+        }
+
+        if(obj2 instanceof Double) {
+            System.out.println("An object of Double is created.");
+        }
+    }
+
+    // Wrapper Objects into Primitive Types
+    void wrapperToPrimitive(){
+        Integer aObj = Integer.valueOf(23);
+        Double bObj = Double.valueOf(5.55);
+        int a = aObj.intValue();
+        double b = bObj.doubleValue();
+        System.out.println("The value of a: " + a);
+        System.out.println("The value of b: " + b);
     }
 }
