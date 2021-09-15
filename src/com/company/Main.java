@@ -129,10 +129,16 @@ public class Main {
 
         ReaderClass readerClass = new ReaderClass();
 //        readerClass.fileReader();
-        readerClass.inputStreamReader();
+//        readerClass.inputStreamReader();
 
         WriterClass writerClass = new WriterClass();
 //        writerClass.fileWriter();
+
+        TypeCasting typeCasting = new TypeCasting();
+//        typeCasting.intToDouble();
+//        typeCasting.intToString();
+        typeCasting.StringToInt();
+//        typeCasting.doubleToInt();
 
         FileClass fileClass = new FileClass();
 //        fileClass.createNewFile();

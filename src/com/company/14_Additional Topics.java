@@ -5,6 +5,36 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.Arrays;
+class TypeCasting{
+    //int to double
+    void intToDouble(){
+        int num = 10;
+        System.out.println("The integer value: " + num);
+        double num1 = num;
+        System.out.println("The double value: " + num1);
+    }
+    //double to int
+    void doubleToInt(){
+        double num = 10.99;
+        System.out.println("The double value: " + num);
+        int data = (int)num;
+        System.out.println("The integer value: " + data);
+    }
+    //int to String
+    void intToString(){
+        int num = 10;
+        System.out.println("The integer value: " + num);
+        String data = String.valueOf(num);
+        System.out.println("The string value is: " + data);
+    }
+    //String to int
+    void StringToInt(){
+        String data = "10";
+        System.out.println("The string value is: " + data);
+        int num = Integer.parseInt(data);
+        System.out.println("The integer value is: " + num);
+    }
+}
 
 class FileClass {
     //Create a new File
