@@ -137,8 +137,12 @@ public class Main {
         TypeCasting typeCasting = new TypeCasting();
 //        typeCasting.intToDouble();
 //        typeCasting.intToString();
-        typeCasting.StringToInt();
+//        typeCasting.StringToInt();
 //        typeCasting.doubleToInt();
+
+        LambdaExpression lambdaExpression = new LambdaExpression();
+//        lambdaExpression.noParameter();
+        lambdaExpression.singleParameter();
 
         FileClass fileClass = new FileClass();
 //        fileClass.createNewFile();

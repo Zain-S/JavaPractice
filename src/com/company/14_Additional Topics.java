@@ -1,10 +1,9 @@
 package com.company;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.util.Arrays;
+
 class TypeCasting{
     //int to double
     void intToDouble(){
@@ -34,6 +33,34 @@ class TypeCasting{
         int num = Integer.parseInt(data);
         System.out.println("The integer value is: " + num);
     }
+}
+
+class LambdaExpression{
+    //Implement SAM with anonymous classes in java
+    void noParameter(){
+        MyInterface myInterface;
+        myInterface = () -> 3.1415;
+        System.out.println("Value of Pi: " + myInterface.getPieValue());
+    }
+    void singleParameter(){
+        MyInterface2 myInterface2;
+        myInterface2 = (string) -> {
+            String result = "";
+            for (int i = string.length()-1; i>=0; i--) {
+                result+= string.charAt(i);
+            }
+            return result;
+        };
+        System.out.println("Lambda Reversed: " + myInterface2.reverse("Zain"));
+    }
+}
+@FunctionalInterface
+interface MyInterface{
+    double getPieValue();
+}
+@FunctionalInterface
+interface MyInterface2{
+    String reverse(String string);
 }
 
 class FileClass {
