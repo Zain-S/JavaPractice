@@ -42,7 +42,7 @@ class LambdaExpression{
         myInterface = () -> 3.1415;
         System.out.println("Value of Pi: " + myInterface.getPieValue());
     }
-    void singleParameter(){
+    void oneOrMoreParameter(){
         MyInterface2 myInterface2;
         myInterface2 = (string) -> {
             String result = "";
@@ -63,6 +63,34 @@ interface MyInterface2{
     String reverse(String string);
 }
 
+//Generics
+class Generics{
+    GenericClass<Integer> genericClass = new GenericClass<>(5);
+    GenericClass<String> genericClass1 = new GenericClass<>("Apple");
+    void genericClass(){
+        System.out.println("Generic Class returns: " + genericClass.getData());
+        System.out.println("Generic Class returns: " + genericClass1.getData());
+    }
+    void genericMethods(){
+        genericClass.genericMethod("5");
+        genericClass1.genericMethod("String");
+    }
+}
+class GenericClass<T>{
+    private T data;
+    GenericClass(T data){
+        this.data = data;
+    }
+    <T> void genericMethod(T data){
+        System.out.println("Generic Method. ");
+        System.out.println("Data passed: " + data);
+    }
+    T getData(){
+        return this.data;
+    }
+}
+
+//Files
 class FileClass {
     //Create a new File
     void createNewFile(){

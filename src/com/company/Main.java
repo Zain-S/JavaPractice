@@ -142,7 +142,11 @@ public class Main {
 
         LambdaExpression lambdaExpression = new LambdaExpression();
 //        lambdaExpression.noParameter();
-        lambdaExpression.singleParameter();
+//        lambdaExpression.oneOrMoreParameter();
+
+        Generics generics = new Generics();
+//        generics.genericClass();
+//        generics.genericMethods();
 
         FileClass fileClass = new FileClass();
 //        fileClass.createNewFile();
