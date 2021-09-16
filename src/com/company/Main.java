@@ -160,8 +160,6 @@ public class Main {
 //        wrapperClass.primitiveToWrapper();
 //        wrapperClass.wrapperToPrimitive();
 
-
-
         Examples examples = new Examples();
 //        examples.printInteger();
 //        examples.addition();
@@ -188,6 +186,17 @@ public class Main {
 //        examples.decimalToBinaryUsingCustom();
 //        examples.decimalToBinaryUsingToBinaryString();
 //        examples.reverseSentenceUsingRecursion();
+//        examples.sortStringInDictionaryOrder();
+//        examples.AddComplexNumbersByPassingClassToFunction();
+//        examples.calculateDifferenceBetweenTwoTimePeriods();
+//        examples.convertStringToDate();
+//        examples.roundNumberUsingFormat();
+//        examples.roundNumberUsingDecimalFormat();
+//        examples.concatenateTwoArraysUsingArraycopy();
+//        examples.concatenateTwoArraysWithoutUsingArraycopy();
+//        examples.convertCharToString();
+//        examples.convertCharArrayToString();
+        examples.convertStringToCharArray();
 
     }
 
